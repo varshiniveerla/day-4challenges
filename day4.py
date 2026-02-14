@@ -4,8 +4,8 @@ for  i in range(m) :
     n = int(input("enter the number: "))
     score = score + [n]
 print(score)
-reg = int(input("enter last digit of your registration number : "))
-print(reg)
+D = int(input("enter last digit of your registration number : "))
+print(D)
 
 low = []
 medium = []
@@ -33,4 +33,5 @@ print("Low Risk : ",low)
 print("Medium Risk : ",medium)
 print("High Risk : ",high)
 print("Critical Risk : ", critical)
+
 
