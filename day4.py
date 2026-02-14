@@ -36,7 +36,7 @@ print("Critical Risk : ", critical_risk)
 if D%2 == 0 :
     print("My registration number ends with EVEN -> removing low risks")
     removed = removed + 1
-    low =[]
+    low_risk =[]
 
 print("After Personalized Filtering: ")
 print("Low Risk : ",low_risk)
@@ -47,6 +47,7 @@ print("Critical Risk : ", critical_risk)
 print("Total Valid Entries : ",valid)
 print("Ignored Entries : ",ignore)
 print("Removed Due Personalization : ",removed)
+
 
 
 
