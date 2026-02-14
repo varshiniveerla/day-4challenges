@@ -7,10 +7,10 @@ print(score)
 D = int(input("enter last digit of your registration number : "))
 print(D)
 
-low = []
-medium = []
-high = []
-critical = []
+low_risk = []
+medium_risk = []
+high_risk = []
+critical_risk = []
 
 valid = 0
 ignore = 0
@@ -22,16 +22,31 @@ for n in score :
     else :
         valid = valid+1
         if n>=0 and n <= 30:
-            low = low +[n]
+            low_risk = low_risk +[n]
         elif n >=31 and n<=60 :
-            medium = medium + [n]
+            medium_risk = medium_risk + [n]
         elif n >=61 and n<=100 :
-            high = high + [n]
+            high_risk = high_risk + [n]
         else :
             critical = critical + [n]
-print("Low Risk : ",low)
-print("Medium Risk : ",medium)
-print("High Risk : ",high)
-print("Critical Risk : ", critical)
+print("Low Risk : ",low_risk)
+print("Medium Risk : ",medium_risk)
+print("High Risk : ",high_risk)
+print("Critical Risk : ", critical_risk)
+if D%2 == 0 :
+    print("My registration number ends with EVEN -> removing low risks")
+    removed = removed + 1
+    low =[]
+
+print("After Personalized Filtering: ")
+print("Low Risk : ",low_risk)
+print("Medium Risk : ",medium_risk)
+print("High Risk : ",high_risk)
+print("Critical Risk : ", critical_risk)
+
+print("Total Valid Entries : ",valid)
+print("Ignored Entries : ",ignore)
+print("Removed Due Personalization : ",removed)
+
 
 
